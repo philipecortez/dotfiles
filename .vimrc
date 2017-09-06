@@ -15,7 +15,7 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'scrooloose/nerdtree'
-Plugin 'mileszs/ack.vim'
+Plugin 'rking/ag.vim'
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
 " plugin on GitHub repo
@@ -37,7 +37,7 @@ Plugin 'mileszs/ack.vim'
 call vundle#end()            " required
 filetype plugin indent on    " required
 map <C-n> :NERDTreeToggle<CR>
-
+let g:ag_working_path_mode="r"
 " To ignore plugin indent changes, instead use:
 "filetype plugin on
 "
