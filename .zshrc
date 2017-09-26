@@ -91,3 +91,4 @@ eval "$(rbenv init -)"
 
 source "/home/philipe/.oh-my-zsh/custom/themes/spaceship.zsh-theme"
 alias config='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+export EDITOR=vim

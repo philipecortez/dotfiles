@@ -7,3 +7,4 @@
 !.bashrc
 !.tmux.conf
 !.vimrc
+!.config/tmuxinator/*.yml
