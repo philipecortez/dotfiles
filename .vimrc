@@ -1,12 +1,41 @@
+"style
 set number
 syntax on
 colorscheme dues 
+
 set nocompatible              " be iMproved, required
 filetype off                  " required
 " set the runtime path to include Vundle and initialize
+
+
+"Vundle location
 set rtp+=~/.vim/bundle/Vundle.vim
 let mapleader = "\<Space>"
 set clipboard=unnamed
+
+"
+" fugitive vim config
+"
+
+" open the output of git blame
+nnoremap <silent> <leader>gb :Gblame<CR>
+
+" open the output of git diff
+nnoremap <silent> <leader>gd :Gdiff<CR>
+"
+" open the output of git status
+nnoremap <silent> <leader>gs :Gstatus<CR>
+
+"
+" Ag config
+"
+
+nnoremap <silent> df :Ag "<cword>" <CR>
+
+"
+" Vundle plugins
+"
+
 call vundle#begin()
 " alternatively, pass a path where Vundle should install plugins
 "call vundle#begin('~/some/path/here')
@@ -16,6 +45,19 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'scrooloose/nerdtree'
 Plugin 'rking/ag.vim'
+Plugin 'tpope/vim-fugitive'
+Plugin 'ctrlpvim/ctrlp.vim'
+Plugin 'vim-ruby/vim-ruby'
+Plugin 'tpope/vim-rails'
+Plugin 'airblade/vim-gitgutter'
+Plugin 'bronson/vim-trailing-whitespace'
+Plugin 'bling/vim-airline'
+Plugin 'tpope/vim-endwise'
+Plugin 'honza/vim-snippets'
+Plugin 'elixir-lang/vim-elixir'
+Plugin 'slashmili/alchemist.vim'
+Plugin 'craigemery/vim-autotag'
+
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
 " plugin on GitHub repo
@@ -36,8 +78,25 @@ Plugin 'rking/ag.vim'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
+
+"
+" nerdtree config
+"
 map <C-n> :NERDTreeToggle<CR>
+
+"
+" Ag config
+"
 let g:ag_working_path_mode="r"
+
+"
+" Indent settings
+"
+set shiftwidth=2
+set softtabstop=2
+set expandtab
+set autoindent
+
 " To ignore plugin indent changes, instead use:
 "filetype plugin on
 "
