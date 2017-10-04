@@ -1,9 +1,7 @@
 "style
 set number
 syntax on
-set termguicolors
-colorscheme nova
-set background=dark
+colorscheme neodark
 
 set nocompatible              " be iMproved, required
 filetype off                  " required
@@ -59,8 +57,7 @@ Plugin 'honza/vim-snippets'
 Plugin 'elixir-lang/vim-elixir'
 Plugin 'slashmili/alchemist.vim'
 Plugin 'craigemery/vim-autotag'
-Plugin 'zanglg/nova.vim'
-
+Plugin 'KeitaNakamura/neodark.vim'
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
 " plugin on GitHub repo
