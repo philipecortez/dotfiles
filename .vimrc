@@ -30,7 +30,7 @@ nnoremap <silent> <leader>gs :Gstatus<CR>
 " Ag config
 "
 
-nnoremap <silent> df :Ag "<cword>" <CR>
+nnoremap <leader>a :Ag! "<cword>"<CR>
 
 "
 " Vundle plugins
@@ -58,6 +58,9 @@ Plugin 'elixir-lang/vim-elixir'
 Plugin 'slashmili/alchemist.vim'
 Plugin 'craigemery/vim-autotag'
 Plugin 'KeitaNakamura/neodark.vim'
+Plugin 'terryma/vim-multiple-cursors'
+
+
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
 " plugin on GitHub repo
@@ -79,10 +82,11 @@ Plugin 'KeitaNakamura/neodark.vim'
 call vundle#end()            " required
 filetype plugin indent on    " required
 
+"set termguicolors
 "
 " nerdtree config
 "
-map <C-n> :NERDTreeToggle<CR>
+nnoremap <silent> \ :NERDTreeToggle<CR>
 
 "
 " Ag config
