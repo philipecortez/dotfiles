@@ -60,6 +60,7 @@ Plugin 'craigemery/vim-autotag'
 Plugin 'KeitaNakamura/neodark.vim'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'pangloss/vim-javascript'
+Plugin 'mxw/vim-jsx'
 Plugin 'ZoomWin'
 
 
