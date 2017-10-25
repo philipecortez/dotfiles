@@ -59,6 +59,8 @@ Plugin 'slashmili/alchemist.vim'
 Plugin 'craigemery/vim-autotag'
 Plugin 'KeitaNakamura/neodark.vim'
 Plugin 'terryma/vim-multiple-cursors'
+Plugin 'pangloss/vim-javascript'
+Plugin 'ZoomWin'
 
 
 " The following are examples of different formats supported.
@@ -117,3 +119,9 @@ set autoindent
 " CtrlP config
 
 set wildignore+=*/tmp/*,*/node_modules/*,*.so,*.swp,*.zip     " MacOSX/Linux
+
+
+" vin-javascript
+
+let g:javascript_plugin_flow = 1
+
