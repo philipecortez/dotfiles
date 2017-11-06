@@ -7,7 +7,7 @@ set nocompatible              " be iMproved, required
 filetype off                  " required
 " set the runtime path to include Vundle and initialize
 
-
+tnoremap <Esc> <C-\><C-n>
 "Vundle location
 let mapleader = "\<Space>"
 set clipboard=unnamed
