@@ -1,6 +1,7 @@
 "style
 set number
 syntax on
+set nowrap
 
 set nocompatible              " be iMproved, required
 filetype off                  " required
@@ -56,6 +57,7 @@ Plug 'terryma/vim-multiple-cursors'
 Plug 'pangloss/vim-javascript'
 Plug 'mxw/vim-jsx'
 Plug 'vim-scripts/ZoomWin'
+Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 call plug#end()
 
 filetype plugin indent on    " required
@@ -79,6 +81,8 @@ set softtabstop=2
 set expandtab
 set autoindent
 
+set cursorline
+
 " To ignore plugin indent changes, instead use:
 "filetype plugin on
 "
@@ -96,9 +100,13 @@ set autoindent
 
 set wildignore+=*/tmp/*,*/node_modules/*,*.so,*.swp,*.zip     " MacOSX/Linux
 
-
 " vim-javascript
 
 let g:javascript_plugin_flow = 1
 
+"
+" deoplete
+"
+
+" theme
 colorscheme neodark
