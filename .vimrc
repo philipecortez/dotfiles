@@ -9,7 +9,6 @@ filetype off                  " required
 
 
 "Vundle location
-set rtp+=~/.vim/bundle/Vundle.vim
 let mapleader = "\<Space>"
 set clipboard=unnamed
 
@@ -33,56 +32,33 @@ nnoremap <silent> <leader>gs :Gstatus<CR>
 nnoremap <leader>a :Ag! "<cword>"<CR>
 
 "
-" Vundle plugins
+" Plug plugins
 "
+call plug#begin('~/.vim/plugged')
 
-call vundle#begin()
-" alternatively, pass a path where Vundle should install plugins
-"call vundle#begin('~/some/path/here')
+Plug 'VundleVim/Vundle.vim'
+Plug 'scrooloose/nerdcommenter'
+Plug 'scrooloose/nerdtree'
+Plug 'rking/ag.vim'
+Plug 'tpope/vim-fugitive'
+Plug 'ctrlpvim/ctrlp.vim'
+Plug 'vim-ruby/vim-ruby'
+Plug 'tpope/vim-rails'
+Plug 'airblade/vim-gitgutter'
+Plug 'bronson/vim-trailing-whitespace'
+Plug 'bling/vim-airline'
+Plug 'tpope/vim-endwise'
+Plug 'honza/vim-snippets'
+Plug 'elixir-lang/vim-elixir'
+Plug 'slashmili/alchemist.vim'
+Plug 'craigemery/vim-autotag'
+Plug 'KeitaNakamura/neodark.vim'
+Plug 'terryma/vim-multiple-cursors'
+Plug 'pangloss/vim-javascript'
+Plug 'mxw/vim-jsx'
+Plug 'vim-scripts/ZoomWin'
+call plug#end()
 
-" let Vundle manage Vundle, required
-Plugin 'VundleVim/Vundle.vim'
-Plugin 'scrooloose/nerdcommenter'
-Plugin 'scrooloose/nerdtree'
-Plugin 'rking/ag.vim'
-Plugin 'tpope/vim-fugitive'
-Plugin 'ctrlpvim/ctrlp.vim'
-Plugin 'vim-ruby/vim-ruby'
-Plugin 'tpope/vim-rails'
-Plugin 'airblade/vim-gitgutter'
-Plugin 'bronson/vim-trailing-whitespace'
-Plugin 'bling/vim-airline'
-Plugin 'tpope/vim-endwise'
-Plugin 'honza/vim-snippets'
-Plugin 'elixir-lang/vim-elixir'
-Plugin 'slashmili/alchemist.vim'
-Plugin 'craigemery/vim-autotag'
-Plugin 'KeitaNakamura/neodark.vim'
-Plugin 'terryma/vim-multiple-cursors'
-Plugin 'pangloss/vim-javascript'
-Plugin 'mxw/vim-jsx'
-Plugin 'ZoomWin'
-
-
-" The following are examples of different formats supported.
-" Keep Plugin commands between vundle#begin/end.
-" plugin on GitHub repo
-" Plugin 'tpope/vim-fugitive'
-" plugin from http://vim-scripts.org/vim/scripts.html
-" Plugin 'L9'
-" Git plugin not hosted on GitHub
-" Plugin 'git://git.wincent.com/command-t.git'
-" git repos on your local machine (i.e. when working on your own plugin)
-" Plugin 'file:///home/gmarik/path/to/plugin'
-" The sparkup vim script is in a subdirectory of this repo called vim.
-" Pass the path to set the runtimepath properly.
-" Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
-" Install L9 and avoid a Naming conflict if you've already installed a
-" different version somewhere else.
-" Plugin 'ascenator/L9', {'name': 'newL9'}
-
-" All of your Plugins must be added before the following line
-call vundle#end()            " required
 filetype plugin indent on    " required
 
 "set termguicolors
@@ -122,7 +98,7 @@ set autoindent
 set wildignore+=*/tmp/*,*/node_modules/*,*.so,*.swp,*.zip     " MacOSX/Linux
 
 
-" vin-javascript
+" vim-javascript
 
 let g:javascript_plugin_flow = 1
 
