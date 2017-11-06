@@ -1,7 +1,6 @@
 "style
 set number
 syntax on
-colorscheme neodark
 
 set nocompatible              " be iMproved, required
 filetype off                  " required
@@ -34,7 +33,7 @@ nnoremap <leader>a :Ag! "<cword>"<CR>
 "
 " Plug plugins
 "
-call plug#begin('~/.vim/plugged')
+call plug#begin('~/.config/nvim/plugged')
 
 Plug 'VundleVim/Vundle.vim'
 Plug 'scrooloose/nerdcommenter'
@@ -102,3 +101,4 @@ set wildignore+=*/tmp/*,*/node_modules/*,*.so,*.swp,*.zip     " MacOSX/Linux
 
 let g:javascript_plugin_flow = 1
 
+colorscheme neodark
