@@ -18,11 +18,10 @@ set nowritebackup
 set noswapfile
 set history=50
 set ruler
+set expandtab
 set tabstop=2
 set shiftwidth=2
-set softtabstop=2
 set shiftround
-set expandtab
 set autoindent
 set cursorline
 set scrolloff=5
